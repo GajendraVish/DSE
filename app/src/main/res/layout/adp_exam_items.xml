@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/_1sdp"
+        app:cardCornerRadius="@dimen/_3sdp">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_7sdp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <com.pratham.dse.widget.CustomBoldTextView
+                android:id="@+id/tv_exam_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                tools:text="NTA"
+                android:textStyle="bold"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_15ssp" />
+
+        <com.pratham.dse.widget.CustomBoldTextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="14 Feb, 2020 "
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/_13ssp" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/alert_toast_back"
+    app:cardElevation="@dimen/_4sdp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/toast_paddingStartEnd"
+        android:paddingTop="@dimen/toast_paddingTopBottom"
+        android:paddingEnd="@dimen/toast_paddingStartEnd"
+        android:paddingBottom="@dimen/toast_paddingTopBottom">
+
+        <ImageView
+            android:id="@+id/iv_info_indicator"
+            android:layout_width="@dimen/toast_icon_msg_width"
+            android:layout_height="@dimen/toast_icon_msg_height"
+            android:layout_gravity="center_vertical|start"
+            tools:src="@drawable/ic_success" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tc_toast_success"
+                android:textSize="@dimen/toast_title_text_size"
+                android:textStyle="bold"
+                tools:text="Alert Title" />
+
+            <TextView
+                android:id="@+id/tv_info_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/toast_msg_text_size"
+                tools:text="Alert Message" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

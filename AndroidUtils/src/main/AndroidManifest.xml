@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bhaskar.utils">
+
+    <application>
+        <provider
+            android:name="com.imageprovider.ImagePickerProvider"
+            android:authorities="${applicationId}.imagepickerprovider"
+            android:exported="false"
+            tools:replace="android:authorities"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths_image_picker" />
+        </provider>
+    </application>
+</manifest>
+

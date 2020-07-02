@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@fonts/Lato_Semibold</item>
+    </style>
+    <style name="ThemeEditTextLight">
+        <!-- bottom line color -->
+        <item name="colorControlNormal">#ffffff</item>
+        <!-- text color -->
+        <item name="android:textColor">#ffffff</item>
+        <!-- hint text color -->
+        <item name="android:textColorHint">#BDBDBD</item>
+
+
+    </style>
+    <style name="NavigationText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:fontFamily">@fonts/Lato_Semibold</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

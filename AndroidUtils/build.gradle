@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+/*apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.developer100rbh'*/
+
+android {
+    compileSdkVersion rootProject.ext.COMPILE_SDK
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.MIN_SDK
+        targetSdkVersion rootProject.ext.TARGET_SDK
+        versionCode rootProject.ext.VERSION_CODE
+        versionName rootProject.ext.VERSION_NAME
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.wang.avi:library:2.1.3'
+    api "androidx.cardview:cardview:${rootProject.ext.SUPPORT_API_VERSION}"
+    api "androidx.fragment:fragment:${rootProject.ext.ANDROID_X_FRAGMENT}"
+    api 'com.google.code.gson:gson:2.8.5'
+    api "androidx.browser:browser:${rootProject.ext.SUPPORT_API_VERSION}"
+    api 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    api "com.squareup.retrofit2:retrofit:${rootProject.ext.RETROFIT}"
+    api "com.squareup.retrofit2:converter-gson:${rootProject.ext.RETROFIT}"
+    api 'com.facebook.stetho:stetho:1.5.0'
+    api 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    api "androidx.constraintlayout:constraintlayout:${rootProject.ext.CONSTRAINT_LAYOUT}"
+    //implementation "androidx.exifinterface:exifinterface:${rootProject.ext.SUPPORT_API_VERSION}"
+    //My Page In-House Modules Dependency
+    api 'com.intuit.sdp:sdp-android:1.0.5'
+    api 'com.intuit.ssp:ssp-android:1.0.5'
+    api 'com.makeramen:roundedimageview:2.3.0'
+
+    //For youtube player to play youtube urls (In book my show)
+    //api project(':ezdialoglib')
+}
+
+// Dependency createion
+// https://github.com/developer100rbh/AndroidUtilsLibProject
+// https://jitpack.io/#developer100rbh/AndroidUtilsLibProject/1.5
+

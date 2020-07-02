@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_title_exception">एरर!</string>
+
+    <string name="alert_title_error">एरर!</string>
+    <string name="alert_title_success">सफल</string>
+    <string name="alert_title_failed">असफल!</string>
+    <string name="alert_title_alert">अलर्ट!</string>
+
+    <string name="alert_api_failed">Internet not available, Please check your network.</string>
+
+    <string name="alert_request_retry">आपकी रिक्वेस्ट प्रोसेस नहीं हो पा रही है, कृपया Retry पे क्लिक कर पुनः प्रयास करें।</string>
+
+    <string name="alert_request_unable_to_process">अभी आपकी रिक्वेस्ट हम प्रोसेस करने में असमर्थ हैं।</string>
+    <string name="alert_request_processing">आपकी रिक्वेस्ट प्रोसेस की जा रही है, कृपया प्रतीक्षा करें।</string>
+    <string name="alert_request_processing_plz_wait">आपकी रिक्वेस्ट प्रोसेस की जा रही है,\nकृपया प्रतीक्षा करें।</string>
+
+</resources>

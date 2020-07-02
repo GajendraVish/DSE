@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pratham.dse.widget.CustomNormalTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/item"
+        android:textSize="@dimen/_13ssp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" >
+
+
+</com.pratham.dse.widget.CustomNormalTextView>

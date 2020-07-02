@@ -1,0 +1,247 @@
+<resources>
+    <string name="app_name">DSE</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_my_account">My Account</string>
+    <string name="menu_profile">Update Profile</string>
+    <string name="menu_change_password">Change Password</string>
+    <string name="menu_call">Call 9999999999</string>
+    <string name="menu_contact">Contact Us</string>
+    <string name="menu_email">abc@shoponline.in</string>
+    <string name="menu_mobile">9999999999</string>
+    <string name="menu_credit_program">Credit Program</string>
+    <string name="menu_about">About Us</string>
+    <string name="menu_other">Other</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_tn">T and C</string>
+    <string name="label_login">Explore New Ways\nTo Shopping with Us</string>
+    <string name="label_enter_mobile_number">Please Enter Your Mobile Number</string>
+    <string name="label_enter_name">Please Enter Your Name</string>
+    <string name="msg_enter_first_name">Please Enter Your First Name</string>
+    <string name="msg_enter_last_name">Please Enter Your Last Name</string>
+    <string name="msg_enter_email_id">Please Enter Your Email Address</string>
+    <string name="msg_enter_valid_email_id">Please Enter Your Valid Email Address</string>
+    <string name="msg_enter_mobile">Please Enter Your 10 digit Mobile Number</string>
+    <string name="msg_enter_already_mobile">Mobile Number already registered</string>
+    <string name="msg_enter_aadhaar">Please Enter Your 12 digit Aadhaar Number</string>
+    <string name="msg_select_state">Please select your state</string>
+    <string name="msg_select_city">Please select your city</string>
+    <string name="msg_enter_address">Please enter your address</string>
+    <string name="msg_enter_pincode">Please enter your pincode</string>
+    <string name="msg_capture_image">Please capture your photo</string>
+    <string name="msg_image_uploaded">Image uploaded successfully</string>
+    <string name="msg_capture_aadhar_image">Please capture your Aadhaar card photo</string>
+    <string name="label_enter_email">Please Enter Your Email Address</string>
+    <string name="please_enter_username">Please Enter Your Username</string>
+    <string name="please_enter_password">Please Enter Your Password</string>
+    <string name="please_select_user">Please select user type</string>
+    <string name="please_select_center">Please select Center</string>
+    <string name="please_select_date">Please select Date</string>
+    <string name="please_select_time">Please select Time</string>
+    <string name="please_enter_bts_tower_100_mtr">Please enter BTS tower with in 100 MTR </string>
+    <string name="please_enter_bts_tower_roof">Please enter BTS tower on roof</string>
+    <string name="please_enter_install_jammer_big">Please enter number of big installed jammer</string>
+    <string name="please_enter_install_jammer_small">Please enter number of small installed jammer</string>
+    <string name="please_enter_reserve_jammer_big">Please enter number of big reserve jammer</string>
+    <string name="please_enter_reserve_jammer_small">Please enter number of small reserve jammer</string>
+    <string name="please_enter_total_number_room">Please enter the total number of roofs</string>
+    <string name="please_enter_total_number_labs">Please enter the total number of labs</string>
+    <string name="please_enter_jio_signal_strength">Please enter jio signal strength</string>
+    <string name="please_enter_airtel_signal_strength">Please enter airtel signal strength</string>
+    <string name="please_enter_idea_signal_strength">Please enter idea signal strength</string>
+    <string name="please_enter_other_signal_strength">Please enter other signal strength</string>
+    <string name="dashboard_admin_not_available">Dashboard for Admin not available </string>
+    <string name="dashboard_sc_not_available">Dashboard for SC not available </string>
+    <string name="please_accept_tc">Please accept term and conditions</string>
+    <string name="please_enter_otp">Please enter OTP</string>
+    <string name="please_valid_otp">Please enter valid OTP</string>
+    <string name="login">Login</string>
+    <string name="mark_mid_attendance">Mark Mid Attendance</string>
+    <string name="checkout">Check Out</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="add_cart">Add to Cart</string>
+    <string name="go_cart">Go to Cart</string>
+    <string name="mrp_amount">&#x20B9; 125</string>
+    <string name="act_amount">&#x20B9; 100</string>
+    <string name="description">Description:</string>
+    <string name="recipe_detail">Recipe Details</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="steps">Steps:</string>
+    <string name="msg_recipe_added_in_cart">Recipe has been added in the cart.</string>
+    <string name="your_cart">Your Cart</string>
+    <string name="order_history">Your Orders</string>
+    <string name="hint_search">Search</string>
+    <string name="no_result_found">No Result Found</string>
+    <string name="msg_enter_search">Please enter search text</string>
+    <string name="msg_valid_email">Please enter valid email id</string>
+    <string name="msg_valid_mobile">Please enter valid mobile number</string>
+    <string name="default_name">Welcome</string>
+    <string name="msg_order_placed">Your order has been placed successfully</string>
+    <string name="msg_cart_empty">Your cart is empty</string>
+    <string name="msg_history_empty">Your order history is empty</string>
+    <string name="enter_user_name">Enter Your Username</string>
+    <string name="enter_password">Enter Your Password</string>
+    <string name="msg_list_empty">List is Empty</string>
+    <string name="title_exam_schedule">Exam Schedule</string>
+    <string name="title_exam_shift">Exam Shifts</string>
+    <string name="title_exam_shift_details">Exam Shift Details</string>
+    <string name="title_exam_dates">Exam Dates</string>
+    <string name="title_registration">Registration</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_otp">OTP</string>
+    <string name="bth_lable_next">Next</string>
+    <string name="bth_lable_take_photo">Take Photo</string>
+    <string name="bth_lable_take_adhar">Take Aadhaar card</string>
+    <string name="lable_upload_picture">Take and Upload your picture here</string>
+    <string name="lable_upload_aadhaar">Upload your Aadhaar card here</string>
+    <string name="lable_time">Time*</string>
+    <string name="lable_arrival_time">Arrival Time</string>
+    <string name="lable_departure_time">Departure Time</string>
+    <string name="lable_on_time">ON Time</string>
+    <string name="lable_off_time">OFF Time</string>
+    <string name="lable_mid_attendance">Mid Attendance</string>
+    <string name="lable_upload">Upload Attachment</string>
+    <string name="lable_name">First Name*</string>
+    <string name="lable_last_name">Last Name*</string>
+    <string name="lable_mobile">Mobile Number*</string>
+    <string name="lable_alternet_mobile">Alternate Mobile Number</string>
+    <string name="lable_email">Email Id*</string>
+    <string name="lable_aadhaar_no">Aadhaar No*</string>
+    <string name="lable_state">State*</string>
+    <string name="lable_city">City*</string>
+    <string name="lable_usertype">Select User Type*</string>
+    <string name="lable_select_center">Select Exam Center*</string>
+    <string name="lable_address">Address*</string>
+    <string name="lable_bts_tower">BTS Tower with in 100 MTR</string>
+    <string name="lable_bts_tower_on_roof">BTS Tower on roof</string>
+    <string name="lable_no_of_roofs">Total No. of Roofs</string>
+    <string name="lable_no_of_labs">Total No. of Labs</string>
+    <string name="lable_big">Big</string>
+    <string name="lable_small">Small</string>
+    <string name="lable_pincode">Pincode*</string>
+    <string name="lable_signal_strength">Signal Strength</string>
+    <string name="lable_exam_shifts">Exam Shifts</string>
+    <string name="lable_jamming_status">Jamming Status</string>
+    <string name="lable_jammer_photo">Photograph of Installed Jammer</string>
+    <string name="hint_time">Choose Time</string>
+    <string name="hint_date">Choose Date</string>
+    <string name="hint_name">Enter First Name</string>
+    <string name="hint_user_type">Enter User type</string>
+    <string name="hint_last_name">Enter Last Name</string>
+    <string name="hint_mobile">Enter Mobile Number</string>
+    <string name="hint_alternate_mobile">Enter Alternate Mobile Number</string>
+    <string name="hint_email">Enter Email Id</string>
+    <string name="hint_aadhaarno">Enter Aadhaar No</string>
+    <string name="hint_address">Enter Address</string>
+    <string name="hint_pincode">Enter Pincode</string>
+    <string name="btn_submit">Submit</string>
+    <string name="title_installation">Installation</string>
+    <string name="title_exanm_details">Exam Details</string>
+    <string name="lable_tandc">I agree to the Terms and Conditions</string>
+    <string name="jio"> Jio</string>
+    <string name="airtel"> Airtel</string>
+    <string name="idea">Idea</string>
+    <string name="other">Other</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="lable_sign_off">Sign off</string>
+    <string name="lable_yes">Yes</string>
+    <string name="lable_no">No</string>
+    <string name="yes"> Y</string>
+    <string name="no"> N</string>
+    <string name="three_g">3G</string>
+    <string name="four">4G</string>
+    <string name="alert_api_failed">Internet not available, Please check your network.</string>
+    <string name="msg_null_data">Api not responding</string>
+    <string name="msg_location_not_found">Location not found Please on your GPS</string>
+    <string name="msg_reg_done">Your registration has been done successfully, Please login with your mobile number after account activation</string>
+    <string name="select_state">Select State</string>
+    <string name="select_city">Select City</string>
+    <string name="select_center">Select Exam Center</string>
+    <string name="lable_number_of_jammer_installed">No. of Jammer installed</string>
+    <string name="lable_number_of_jammer_reserve">No. of Jammer reserve</string>
+    <string name="msg_installation_data_save">Installation data has been saved successfully</string>
+    <string name="msg_save_departuretime">Departure time has been successfully updated on server</string>
+    <string name="msg_save_arrival">Arrival time has been successfully updated on server</string>
+    <string name="msg_save_time">Shift Time has been successfully updated on server</string>
+    <string name="msg_save_attendance">Attendance has been successfully updated on server</string>
+    <string name="msg_save_remark">Remark has been successfully saved on server</string>
+    <string name="msg_save_uploads">Attachment has been successfully updated on server</string>
+    <string name="msg_please_enable_gps">Your Location service is off. Please enable it.</string>
+    <string name="shift_one">Shift 1</string>
+    <string name="shift_two">Shift 2</string>
+    <string name="shift_three">Shift 3</string>
+    <string name="shift_four">Shift 4</string>
+    <string name="exam_schedule">Exam Schedule</string>
+    <string name="view">View</string>
+    <string name="jamer_movement">Jammer movement</string>
+    <string name="fund">Fund</string>
+    <string name="conveyance_log">Conveyance log</string>
+    <string name="issues">Issues</string>
+    <string name="title_conveyance_log">Conveyance Log</string>
+    <string name="with_jammer">With Jammer</string>
+    <string name="without_jammer">Without Jammer</string>
+    <string name="title_conveyance_log_with_jammer">Conveyance Log - With Jammer</string>
+    <string name="lable_date">Date*</string>
+    <string name="lable_select_date">Select Date</string>
+    <string name="labele_select_travel_medium">Select Travel Medium</string>
+    <string name="lable_start_point">Start Point</string>
+    <string name="lable_start_point_photo">Start Point Photo</string>
+    <string name="lable_destination_point">Destination Point</string>
+    <string name="lable_destination_point_photo">Destination Point Photo</string>
+    <string name="lable_vehicle_number">Vehicle Number</string>
+    <string name="lable_driver_contact_no">Driver Contact No</string>
+    <string name="lable_no_of_jammer">No of Jammer</string>
+    <string name="lable_total">Total</string>
+    <string name="lable_comments">Comments</string>
+    <string name="lable_attach_receipt">Attach Receipt</string>
+    <string name="lable_good_morning">Good Morning</string>
+    <string name="lable_approximate_km">Approximate Km</string>
+    <string name="lable_amount_paid">Amount Paid</string>
+    <string name="msg_future_date_is_disable_now">Future date is disable now</string>
+    <string name="msg_please_submit_departure_time_before_arrival">Please submit departure time before submitting arrival time</string>
+    <string name="msg_please_submit_departure_time">Please submit departure time</string>
+    <string name="msg_please_submit_arrival_time">Please submit arrival time</string>
+    <string name="msg_please_enter_remarks">Please enter remark issue</string>
+    <string name="lable_mark_issue">Mark Issue</string>
+
+
+    <array name="cityArrary">
+        <item>Select City</item>
+        <item>Bhopal</item>
+        <item>Indore</item>
+    </array>
+
+    <array name="userTypes">
+        <item>USER TYPE</item>
+        <item>ADMIN</item>
+        <item>TECHNICIAN</item>
+        <item>SC</item>
+    </array>
+
+
+    <array name="shift">
+        <item>Shift 1 </item>
+        <item>Shift 2</item>
+        <item>Shift 3</item>
+        <item>Shift 4</item>
+    </array>
+
+    <array name="exam_dates">
+        <item>Date: 06.02.2020</item>
+        <item>Date: 07.02.2020</item>
+        <item>Date: 08.02.2020</item>
+        <item>Date: 09.02.2020</item>
+    </array>
+    <array name="transport_medium">
+        <item>Select Travel Medium</item>
+        <item>Bus</item>
+        <item>Auto</item>
+        <item>Cab</item>
+        <item>Shared</item>
+        <item>Loading Vehicle</item>
+    </array>
+
+
+</resources>

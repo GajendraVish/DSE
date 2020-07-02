@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryUtils">#FFF89C1B</color>
+
+    <color name="tc_toast_success">#FF50AE00</color>
+    <color name="tc_toast_fail">#FFAE2020</color>
+    <color name="tc_toast_alert">#FFF5740B</color>
+
+    <color name="alert_toast_back">#AA000000</color>
+
+    <color name="orange">#dd7000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray_5">#dddddd</color>
+
+    <color name="name_ranbow_violet">#9400D3</color>
+    <color name="name_ranbow_indigo">#4B0082</color>
+    <color name="name_ranbow_blue">#0000FF</color>
+    <color name="name_ranbow_green">#00FF00</color>
+    <color name="name_ranbow_yellow">#FFFF00</color>
+    <color name="name_ranbow_orange">#FF7F00</color>
+    <color name="name_ranbow_red">#FF0000</color>
+    <color name="api_loader_trans_color">#00000000</color>
+
+    <color name="tambola_blue">#005fbc</color>
+
+
+    <color name="back_theme_light">#FFF3F3F3</color>
+    <color name="back_theme_dark">#FF333333</color>
+</resources>

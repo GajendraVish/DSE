@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_ground"
+        android:orientation="vertical"
+        tools:context=".ui.home.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+            android:id="@+id/mainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_20sdp"
+            android:layout_weight="1">
+        <com.pratham.dse.widget.CustomNormalTextView
+                android:id="@+id/tvMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_14ssp" />
+        <com.pratham.dse.widget.CustomBoldTextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:text="Varification Code"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        <com.pratham.dse.widget.CustomNormalTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:text="Please type the varification code sent to"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_14ssp" />
+        <com.pratham.dse.widget.CustomNormalTextView
+                android:id="@+id/tvMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                tools:text="9893342590"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_14ssp" />
+
+        <com.chaos.view.PinView
+                android:id="@+id/otpView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:cursorVisible="true"
+                android:inputType="numberSigned"
+                android:itemBackground="@null"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_18ssp"
+                app:cursorColor="@android:color/black"
+                app:cursorWidth="@dimen/_1sdp"
+                app:itemCount="6"
+                app:itemHeight="@dimen/_30sdp"
+                app:itemWidth="@dimen/_30sdp"
+                app:lineColor="@color/dark_text"
+                app:lineWidth="@dimen/_1sdp"
+                app:viewType="line" />
+        <com.pratham.dse.widget.CustomBoldTextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/tvResendOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                tools:text="Resend"
+                android:textStyle="bold"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/_10ssp" />
+        <com.pratham.dse.widget.CustomNormalCheckBox
+                android:id="@+id/cbTandC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/lable_tandc"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_11ssp" />
+
+        <com.pratham.dse.widget.CustomNormalTextView
+                android:layout_marginTop="@dimen/_25sdp"
+                android:id="@+id/tvBtnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_20sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/btn_submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

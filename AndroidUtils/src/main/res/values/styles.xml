@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TransLoader" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/api_loader_trans_color</item>
+    </style>
+
+    <style name="EzDialogUpTheme" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/EzDialogUpThemeAnims</item>
+    </style>
+
+    <style name="EzDialogDownTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/EzDialogDownThemeAnims</item>
+    </style>
+
+    <style name="EzDialogUpThemeAnims">
+        <item name="android:windowEnterAnimation">@anim/up_enter</item>
+        <item name="android:windowExitAnimation">@anim/up_exit</item>
+    </style>
+
+    <style name="EzDialogDownThemeAnims">
+        <item name="android:windowEnterAnimation">@anim/down_enter</item>
+        <item name="android:windowExitAnimation">@anim/down_exit</item>
+    </style>
+
+</resources>

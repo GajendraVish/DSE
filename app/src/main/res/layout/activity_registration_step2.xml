@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/blur_backgroung"
+        android:orientation="vertical"
+        tools:context=".ui.home.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+        <com.pratham.dse.widget.CustomNormalTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lable_upload_picture"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_above="@+id/ivProfile"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_15ssp" />
+        <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_no_image" />
+
+        <com.pratham.dse.widget.CustomNormalTextView
+                android:id="@+id/tvTakePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivProfile"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorPrimary"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:alpha="0.90"
+                android:text="@string/bth_lable_take_photo"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp" />
+
+        <com.pratham.dse.widget.CustomNormalTextView
+                android:id="@+id/tvNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@color/red"
+                android:paddingStart="@dimen/_30sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:alpha="0.90"
+                android:paddingEnd="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/bth_lable_next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

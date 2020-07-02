@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidUtils</string>
+
+    <string name="btn_retry">Retry</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="label_okey">Ok</string>
+
+    <string name="label_minute">मिनट</string>
+    <string name="label_seconds">सेकंड</string>
+</resources>

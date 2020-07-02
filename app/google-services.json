@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "980278049046",
+    "firebase_url": "https://dse-app-19a6e.firebaseio.com",
+    "project_id": "dse-app-19a6e",
+    "storage_bucket": "dse-app-19a6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980278049046:android:46931f0bf3e7657c67f837",
+        "android_client_info": {
+          "package_name": "com.pratham.dse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980278049046-vrsh3k95blr1d9gtmbltukjlcd8c8kur.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pratham.dse",
+            "certificate_hash": "8ac37eb9155888ec77f39a7bfa612bc6805e0254"
+          }
+        },
+        {
+          "client_id": "980278049046-6shg7r8e73kl0hsgk7qe2r6cfivu0lpf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3pWz6eXTVd526_34-Lo4ghg25Pgj3Hq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980278049046-6shg7r8e73kl0hsgk7qe2r6cfivu0lpf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

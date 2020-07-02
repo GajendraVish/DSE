@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1D56BF</color>
+    <color name="colorPrimaryDark">#0A1D40</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="yellow">#ffaa29</color>
+    <color name="dark_text">#333333</color>
+    <color name="back_ground">#F8F7F7</color>
+    <color name="gray_text">#8B8B8B</color>
+    <color name="light_gray_text">#ADACAC</color>
+    <color name="skyblue">#63A1FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="linear_bg">#424242</color>
+    <color name="matColor1">#e53935</color>
+    <color name="matColor3">#d81b60</color>
+    <color name="matColor2">#8e24aa</color>
+    <color name="matColor4">#1e88e5</color>
+    <color name="matColor5">#00897b</color>
+    <color name="matColor6">#00c853</color>
+    <color name="matColor7">#ff6d00</color>
+    <color name="matColor10">#d500f9</color>
+    <color name="matColor9">#26c6da</color>
+    <color name="matColor8">#ff1744</color>
+    <color name="white">#ffffff</color>
+
+    <color name="gray_ligth">#968B8B</color>
+    <!-- Font Size -->
+    <color name="text_yellow">#FFC000</color>
+    <color name="text_black">#8f8e8e</color>
+
+    <color name="black">#000000</color>
+    <color name="light_black">#928888</color>
+
+    <color name="yellow_dark">#f5c702</color>
+    <color name="red_dark">#2672FF</color>
+    <color name="blue_dark">#8046d4</color>
+    <color name="green_dark">#37b334</color>
+    <color name="image_gray">#a6a2a2</color>
+    <color name="ripple_color">#dfdfdf</color>
+
+    <color name="border_edit_text_color">#374DE2</color>
+    <color name="header_bg">#F68121</color>
+    <color name="text_gray">#193b4f</color>
+
+    <color name="remark_gray">#F1EDED</color>
+    <color name="serach_color">#FFF44336</color>
+
+    <color name="nav_menu_color">#4a9bca</color>
+    <color name="light_red">#DA2F3F</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Red">#CA391C</color>
+    <color name="light_grey">#E9E8E8</color>
+    <color name="dark_orange">#F9671E</color>
+    <color name="text_title">#B16A5A</color>
+    <color name="button_color">#F9671E</color>
+    <color name="button_select">#c25925</color>
+
+    <color name="light_orange">#F26B50</color>
+    <color name="red">#F44236</color>
+    <color name="green">#4BAF4F</color>
+    <color name="orange">#FF5521</color>
+    <color name="blue">#F9671E</color>
+
+    <color name="light_gray">#DEE2E5</color>
+    <color name="background_color">#ffffff</color>
+    <color name="trans_orange">#e2ae0d1d</color>
+    <color name="bg_gray">#F7F7F7</color>
+
+
+    <color name="button_color_red">#A7151F</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#79320F</color>
+    <color name="bg_screen2">#F98F5A</color>
+    <color name="bg_screen3">#9f7a66</color>
+    <color name="bg_screen4">#C65218</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#96441c</color>
+    <color name="dot_dark_screen2">#f99a6b</color>
+    <color name="dot_dark_screen3">#795C4D</color>
+    <color name="dot_dark_screen4">#ce6632</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#79320F</color>
+    <color name="dot_light_screen2">#F98F5A</color>
+    <color name="dot_light_screen3">#795C4D</color>
+    <color name="dot_light_screen4">#C65218</color>
+
+    <color name="album_title">#4c4c4c</color>
+    <color name="viewBg">#f1f5f8</color>
+
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="text_color_gray">#8e8888</color>
+    <color name="sign_in_bg">#8046d4</color>
+
+    <color name="txt_price_color">#0AAC3A</color>
+
+
+
+
+    <color name="grey">#999999</color>
+    <color name="grey_soft">#ededed</color>
+    <color name="separator">#efefef</color>
+    <color name="hint">#767676</color>
+    <color name="available">#2574C3</color>
+    <color name="sold">#767676</color>
+
+
+    <color name="black_text">#000000</color>
+
+    <color name="graph_blue">#3F51B5</color>
+    <color name="graph_light_blue">#009688</color>
+    <color name="graph_hybrid">#FF5722</color>
+
+    <color name="dark_blue1">#231c4e</color>
+    <color name="grey_100">#477597</color>
+    <color name="blue_icon_color">#346B99</color>
+    <color name="dark_blue">#181334</color>
+    <color name="transparent">#00000000</color>
+</resources>

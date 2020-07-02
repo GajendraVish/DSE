@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+    <com.pratham.dse.widget.CustomNormalTextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/lable_mark_issue"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+    <com.pratham.dse.widget.CustomNormalEditText
+            android:id="@+id/etMarkIssue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@drawable/round_rect_grey"
+            android:gravity="left"
+            android:hint="@string/lable_mark_issue"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+        <com.pratham.dse.widget.CustomBoldTextView
+                android:layout_weight="1"
+                android:id="@+id/tvBtnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:alpha="0.90"
+                android:background="@drawable/submit_btn_selector"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="@string/btn_submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"/>
+        <com.pratham.dse.widget.CustomBoldTextView
+                android:layout_weight="1"
+                android:id="@+id/tvBtnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:alpha="0.90"
+                android:background="@drawable/submit_btn_selector"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"/>
+    </LinearLayout>
+</LinearLayout>

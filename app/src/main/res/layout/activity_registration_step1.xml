@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_ground"
+        android:orientation="vertical"
+        tools:context=".ui.home.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/lable_usertype"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:gravity="center">
+
+                <Spinner
+                        android:id="@+id/userTypeSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imavierw3"
+                        android:background="@color/transparent" />
+
+                <ImageView
+                        android:id="@+id/imavierw3"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_down_arrow" />
+            </RelativeLayout>
+
+
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/lable_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalEditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:drawableTint="@color/black"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_name"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/_7sdp"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/lable_last_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalEditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:drawableTint="@color/black"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_last_name"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/_7sdp"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/lable_mobile"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalEditText
+                    android:id="@+id/etMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:drawableTint="@color/black"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_mobile"
+                    android:inputType="numberSigned"
+                    android:maxLength="10"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/_7sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/lable_alternet_mobile"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalEditText
+                    android:id="@+id/etAlternateMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:drawableTint="@color/black"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_alternate_mobile"
+                    android:inputType="numberSigned"
+                    android:maxLength="10"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/_7sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/lable_email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalEditText
+                    android:id="@+id/etEmailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:drawableTint="@color/black"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/_7sdp"
+                    android:maxLength="100"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/lable_aadhaar_no"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalEditText
+                    android:id="@+id/etAadhaarNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:drawableTint="@color/black"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_aadhaarno"
+                    android:maxLength="12"
+                    android:inputType="numberSigned"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/_7sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/lable_state"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomAutoCompleteTextView
+                    android:id="@+id/atcState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:drawableTint="@color/black"
+                    android:gravity="center_vertical"
+                    android:hint="@string/select_state"
+                    android:maxLength="50"
+                    android:text=""
+                    android:inputType="textAutoComplete|textAutoCorrect"
+                    android:imeOptions="actionSearch"
+                    android:padding="@dimen/_7sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+
+            <!--<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:gravity="center">
+
+                <Spinner
+                        android:id="@+id/stateSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imavierw2"
+                        android:background="@color/transparent" />
+
+                <ImageView
+                        android:id="@+id/imavierw2"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_down_arrow" />
+            </RelativeLayout>-->
+
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/lable_city"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:gravity="center">
+
+                <Spinner
+                        android:id="@+id/citySpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imavierw"
+                        android:background="@color/transparent" />
+
+                <ImageView
+                        android:id="@+id/imavierw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_down_arrow" />
+            </RelativeLayout>
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/lable_address"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalEditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:drawableTint="@color/black"
+                    android:gravity="left"
+                    android:hint="@string/hint_address"
+                    android:inputType="textPostalAddress"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/_7sdp"
+                    android:maxLength="400"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/lable_pincode"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalEditText
+                    android:id="@+id/etPinCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:drawableTint="@color/black"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_pincode"
+                    android:inputType="numberSigned"
+                    android:maxLength="6"
+                    android:imeOptions="actionDone"
+                    android:padding="@dimen/_7sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:id="@+id/tvNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/bth_lable_next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

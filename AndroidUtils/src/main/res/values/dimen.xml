@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toast_icon_msg_width">@dimen/_28sdp</dimen>
+    <dimen name="toast_icon_msg_height">@dimen/_28sdp</dimen>
+    <dimen name="toast_paddingStartEnd">@dimen/_5sdp</dimen>
+
+    <dimen name="toast_paddingTopBottom">@dimen/_10sdp</dimen>
+    <dimen name="toast_title_text_size">@dimen/_15ssp</dimen>
+    <dimen name="toast_msg_text_size">@dimen/_12ssp</dimen>
+
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_ground"
+        android:orientation="vertical"
+        tools:context=".ui.home.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_7sdp"
+                android:orientation="vertical">
+
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/lable_on_time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalEditText
+                    android:id="@+id/etOnTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:drawableRight="@drawable/ic_time"
+                    android:drawableTint="@color/dark_blue"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_time"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/lable_mid_attendance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+            <com.pratham.dse.widget.CustomBoldTextView
+                    android:id="@+id/tvBtnAttandance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:alpha="0.90"
+                    android:background="@drawable/submit_btn_selector"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_7sdp"
+                    android:drawableTint="@color/white"
+                    android:drawableRight="@drawable/ic_attendance"
+                    android:text="@string/mark_mid_attendance"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"/>
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/lable_off_time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalEditText
+                    android:id="@+id/etOffTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:drawableRight="@drawable/ic_time"
+                    android:drawableTint="@color/dark_blue"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_time"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/lable_upload"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+            <com.pratham.dse.widget.CustomBoldTextView
+                    android:id="@+id/tvBtnAttachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:alpha="0.90"
+                    android:background="@drawable/submit_btn_selector"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_7sdp"
+                    android:drawableRight="@drawable/ic_attachment"
+                    android:drawableTint="@color/white"
+                    android:text="@string/lable_upload"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"/>
+            <ImageView
+                    android:id="@+id/ivUploads"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="@dimen/_80sdp"
+                    android:src="@mipmap/ic_no_image"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_120sdp"/>
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/lable_mark_issue"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <com.pratham.dse.widget.CustomNormalEditText
+                    android:id="@+id/etMarkIssue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="left"
+                    android:hint="@string/lable_mark_issue"
+                    android:imeOptions="actionNext"
+
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

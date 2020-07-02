@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_ground"
+        android:orientation="vertical"
+        tools:context=".ui.home.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="@string/lable_select_center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_rect_grey"
+                    android:gravity="center">
+
+                <Spinner
+                        android:id="@+id/examCenterSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imavierw3"
+                        android:background="@color/transparent" />
+
+                <ImageView
+                        android:id="@+id/imavierw3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:src="@drawable/ic_down_arrow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <com.pratham.dse.widget.CustomNormalTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/lable_date"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalEditText
+                            android:id="@+id/etDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/round_rect_grey"
+                            android:drawableRight="@drawable/ic_date"
+                            android:drawableTint="@color/dark_blue"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_date"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:padding="@dimen/_7sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <com.pratham.dse.widget.CustomNormalTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/lable_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalEditText
+                            android:id="@+id/etTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/round_rect_grey"
+                            android:drawableRight="@drawable/ic_time"
+                            android:drawableTint="@color/dark_blue"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_time"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:padding="@dimen/_7sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/lable_bts_tower"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <com.pratham.dse.widget.CustomNormalEditText
+                        android:id="@+id/etBtsTower"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/tv1"
+                        android:background="@drawable/round_rect_grey"
+                        android:drawableTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberSigned"
+                        android:padding="@dimen/_7sdp"
+                        android:text="0"
+                        android:maxLength="4"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/lable_bts_tower_on_roof"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <com.pratham.dse.widget.CustomNormalEditText
+                        android:id="@+id/etBtsTowerRoof"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/tv1"
+                        android:background="@drawable/round_rect_grey"
+                        android:drawableTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberSigned"
+                        android:padding="@dimen/_7sdp"
+                        android:text="0"
+                        android:maxLength="4"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+            <com.pratham.dse.widget.CustomBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/lable_number_of_jammer_installed"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/lable_big"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalEditText
+                            android:id="@+id/etBigInstallJammer"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/tv1"
+                            android:background="@drawable/round_rect_grey"
+                            android:drawableTint="@color/black"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberSigned"
+                            android:padding="@dimen/_7sdp"
+                            android:text="0"
+                            android:maxLength="4"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/lable_small"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalEditText
+                            android:id="@+id/etSmallInstallJammer"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/tv1"
+                            android:background="@drawable/round_rect_grey"
+                            android:drawableTint="@color/black"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberSigned"
+                            android:padding="@dimen/_7sdp"
+                            android:text="0"
+                            android:maxLength="4"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.pratham.dse.widget.CustomBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/lable_number_of_jammer_reserve"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/lable_big"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalEditText
+                            android:id="@+id/etReserveBigJammer"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/tv1"
+                            android:background="@drawable/round_rect_grey"
+                            android:drawableTint="@color/black"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberSigned"
+                            android:padding="@dimen/_7sdp"
+                            android:text="0"
+                            android:maxLength="4"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/lable_small"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalEditText
+                            android:id="@+id/etReserveSmallJammer"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/tv1"
+                            android:background="@drawable/round_rect_grey"
+                            android:drawableTint="@color/black"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberSigned"
+                            android:padding="@dimen/_7sdp"
+                            android:text="0"
+                            android:maxLength="4"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/lable_no_of_roofs"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <com.pratham.dse.widget.CustomNormalEditText
+                        android:id="@+id/etRooms"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_rect_grey"
+                        android:drawableTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberSigned"
+                        android:padding="@dimen/_7sdp"
+                        android:text="0"
+                        android:maxLength="4"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/lable_no_of_labs"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <com.pratham.dse.widget.CustomNormalEditText
+                        android:id="@+id/etLabs"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_rect_grey"
+                        android:drawableTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberSigned"
+                        android:padding="@dimen/_7sdp"
+                        android:text="0"
+                        android:maxLength="4"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/dark_blue"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/lable_signal_strength"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/jio"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <com.pratham.dse.widget.CustomNormalEditText
+                        android:id="@+id/etJio"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/round_rect_grey"
+                        android:drawableTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/_7sdp"
+                        android:text="0"
+                        android:maxLength="7"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/airtel"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <com.pratham.dse.widget.CustomNormalEditText
+                        android:id="@+id/etAirtel"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/round_rect_grey"
+                        android:drawableTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/_7sdp"
+                        android:text="0"
+                        android:maxLength="7"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/idea"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <com.pratham.dse.widget.CustomNormalEditText
+                        android:id="@+id/etIdea"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/round_rect_grey"
+                        android:drawableTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/_7sdp"
+                        android:text="0"
+                        android:maxLength="7"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/other"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <com.pratham.dse.widget.CustomNormalEditText
+                        android:id="@+id/etOther"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/round_rect_grey"
+                        android:drawableTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/_7sdp"
+                        android:text="0"
+                        android:maxLength="7"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/dark_blue"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/lable_jamming_status"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/bluetooth"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:checkedButton="@id/rbNoBluetooth"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbYesBluetooth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbNoBluetooth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="@string/no"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/jio"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <com.pratham.dse.widget.CustomNormalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:text="@string/three_g"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:checkedButton="@id/rbJio3gNo"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbJio3gYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbJio3gNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+
+                            android:text="@string/no"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+                <com.pratham.dse.widget.CustomNormalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:text="@string/four"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:checkedButton="@id/rbJio4gNo"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbJio4gYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbJio4gNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+
+                            android:text="@string/no"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/airtel"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <com.pratham.dse.widget.CustomNormalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:text="@string/three_g"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:checkedButton="@id/rbAirtel3gNo"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbAirtel3gYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbAirtel3gNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+
+                            android:text="@string/no"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+                <com.pratham.dse.widget.CustomNormalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:text="@string/four"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:checkedButton="@id/rbAirtel4gNo"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbAirtel4gYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbAirtel4gNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+
+                            android:text="@string/no"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/idea"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <com.pratham.dse.widget.CustomNormalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:text="@string/three_g"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:checkedButton="@id/rbIdea3gNo"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbIdea3gYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbIdea3gNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+
+                            android:text="@string/no"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+                <com.pratham.dse.widget.CustomNormalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:text="@string/four"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:checkedButton="@id/rbIdea4gNo"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbIdea4gYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbIdea4gNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+
+                            android:text="@string/no"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/other"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <com.pratham.dse.widget.CustomNormalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:text="@string/three_g"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:checkedButton="@id/rbOther3gNo"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbOther3gYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbOther3gNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+
+                            android:text="@string/no"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+                <com.pratham.dse.widget.CustomNormalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:text="@string/four"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:checkedButton="@id/rbOther4gNo"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbOther4gYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbOther4gNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+
+                            android:text="@string/no"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <com.pratham.dse.widget.CustomNormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/dark_blue"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/lable_jammer_photo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvJammerPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                <com.pratham.dse.widget.CustomBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/lable_sign_off"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:checkedButton="@id/rbNoSignoff"
+                        android:orientation="horizontal">
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbYesSignoff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lable_yes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                    <com.pratham.dse.widget.CustomNormalRadioButton
+                            android:id="@+id/rbNoSignoff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="@string/lable_no"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <com.pratham.dse.widget.CustomBoldTextView
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:alpha="0.90"
+                    android:background="@drawable/submit_btn_selector"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/btn_submit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

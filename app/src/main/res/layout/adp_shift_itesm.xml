@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/_1sdp"
+        app:cardCornerRadius="@dimen/_3sdp">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_7sdp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <com.pratham.dse.widget.CustomBoldTextView
+                android:id="@+id/tv_shift_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="NTA"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_15ssp" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
