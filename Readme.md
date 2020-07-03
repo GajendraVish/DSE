@@ -1,4 +1,4 @@
-Developer: Poonamchand Sahu, Cont: 9893342590, emailID: rksahu1987@gmail.com
+Developer:gajendra, Cont: 9993412123, emailID: gajendravish76@gmail.com
 
 1. I use MVP Pattern for this sample app.
 2. I use Room database for storing data.
